@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Granam\CzechVocative;
+namespace Eduardstula\CzechVocative;
 
 class CzechName
 {
@@ -108,9 +108,9 @@ class CzechName
         return ['', $suffixes['']];
     }
 
-    private $_manSuffixes;
-    private $_manVsWomanSuffixes;
-    private $_womanFirstVsLastSuffixes;
+    private ?array $_manSuffixes = null;
+    private ?array $_manVsWomanSuffixes = null;
+    private ?array $_womanFirstVsLastSuffixes = null;
 
     private function getManSuffixes(): array
     {

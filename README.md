@@ -1,29 +1,26 @@
-[![Build Status](https://travis-ci.org/jaroslavtyc/granam-czech-vocative.svg?branch=master)](https://travis-ci.org/jaroslavtyc/granam-czech-vocative)
 [![License](https://poser.pugx.org/granam/czech-vocative/license)](https://packagist.org/packages/granam/czech-vocative)
-
-
-## Credits
- - All credits belongs to the original [bigit/vokativ](https://bitbucket.org/bigit/vokativ.git) library author Petr Joachim.
- - This is just port to support higher versions of PHP (and to have atomatic tests on push).
- 
- ---
 
 # Vokativ
 
 *Oslovte své uživatele správně!*
 
+## Podporované verze PHP
+- PHP 8.0
+- PHP 8.1
+- PHP 8.2
+- PHP 8.3 (dev)
 
 ## Instalace
 
 ```bash
-composer require granam/czech-vocative
+composer require eduardstula/czech-vocative
 ```
 
 ## Použití
 
 ```php
 <?php
-use Granam\CzechVocative\CzechName;
+use Eduardstula\CzechVocative\CzechName;
 $name = new CzechName();
 $name->vocative('Petr'); // 'Petře'
 $name->vocative('Novák'); // 'Nováku'
@@ -31,7 +28,7 @@ $name->vocative('Adriana');	// 'Adriano'
 $name->vocative('Fialová');	// 'Fialová'
 ```
 
-Funkce `vocative($name, $isWoman = null, $isLastName = null)` bere jako první argument vlastní jméno v 1. pádu jednotného čísla a vrátí ho vyskloňované v 5. pádu.
+Metoda `vocative($name, $isWoman = null, $isLastName = null)` bere jako první argument vlastní jméno v 1. pádu jednotného čísla a vrátí ho vyskloňované v 5. pádu.
 Upozorňujeme, že funkce nemusí fungovat správně pro jména cizího původu.
 
 ### Další volitelné argumenty jsou:
@@ -46,7 +43,7 @@ Ve výchozím případě `null` je pohlaví detekováno automaticky.
 
 ```php
 <?php
-use Granam\CzechVocative\CzechName;
+use Eduardstula\CzechVocative\CzechName;
 
 $name = new CzechName();
 $name->vocative('Michel'); // 'Micheli' - automaticky jako mužské
@@ -66,7 +63,7 @@ Hodnota tohoto parametru ovlivňuje pouze skloňování ženských jmen.
 
 ```php
 <?php
-use Granam\CzechVocative\CzechName;
+use Eduardstula\CzechVocative\CzechName;
 
 $name = new CzechName();
 $name->vocative('Ivanova'); // 'Ivanova' - automaticky příjmení
@@ -82,7 +79,7 @@ funkce funguje správně v 99.7% případů.
 
 ```php
 <?php
-use Granam\CzechVocative\CzechName;
+use Eduardstula\CzechVocative\CzechName;
 
 $name = new CzechName();
 $name->isMale('Michal'); // true
@@ -91,6 +88,7 @@ $name->isMale('Tereza'); // false
 $name->isMale('Nováková'); // false
 ```
 
-## Kudos
-
-Tato knihovna vznikla jako reimplementace původní implementace Python knihovny Vokativ autora Michala Daniláka <https://github.com/Mimino666/vokativ/>.
+## Credits
+- Original Python version of this library [Mimino666/vokativ](https://github.com/Mimino666/vokativ/), author Michal Danilák.
+- Reimplementation from Python to PHP 5.6 [bigit/vokativ](https://bitbucket.org/bigit/vokativ), author Petr Joachim.
+- Port to PHP 8.0 and automatic tests [granam/czech-vocative](https://github.com/granam/czech-vocative), author Jaroslav Týc 

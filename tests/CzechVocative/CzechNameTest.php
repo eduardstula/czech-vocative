@@ -1,14 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Granam\Tests\CzechVocative;
+namespace Eduardstula\Tests\CzechVocative;
 
-use Granam\CzechVocative\CzechName;
+use Eduardstula\CzechVocative\CzechName;
 use PHPUnit\Framework\TestCase;
 
 class CzechNameTest extends TestCase
 {
-    /** @var CzechName */
-    private $czechName;
+    private \Eduardstula\CzechVocative\CzechName $czechName;
 
     protected function setUp(): void
     {

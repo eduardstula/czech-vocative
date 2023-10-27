@@ -1,5 +1,5 @@
 {
-  "name": "granam/czech-vocative",
+  "name": "eduardstula/czech-vocative",
   "description": "Inflect czech names and surnames.",
   "type": "library",
   "license": "MIT",
@@ -11,24 +11,32 @@
     {
       "name": "Jaroslav Týc",
       "email": "mail@jaroslavtyc.com"
+    },
+    {
+      "name": "Eduard Štůla",
+      "email": "info@eduardstula.cz"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Granam\\CzechVocative\\": "src"
+      "Eduardstula\\CzechVocative\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Granam\\Tests\\CzechVocative\\": "tests/CzechVocative"
+      "Eduardstula\\Tests\\CzechVocative\\": "tests/CzechVocative"
     }
   },
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0",
     "ext-mbstring": "*"
   },
   "require-dev": {
     "phpunit/phpunit": ">=9.1",
-    "rector/rector": "^0.14.2"
+    "rector/rector": "^0.18"
+  },
+  "scripts": {
+    "tests": "vendor/bin/phpunit",
+    "rector": "vendor/bin/rector process"
   }
 }

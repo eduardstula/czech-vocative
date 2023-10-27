@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Rector\Php74\Rector\Property\TypedPropertyRector;
 use Rector\Set\ValueObject\SetList;
 use Rector\Config\RectorConfig;
 use Rector\PHPUnit\Set\PHPUnitSetList;
@@ -16,8 +15,7 @@ return static function (RectorConfig $rectorConfig): void {
         SetList::PHP_72,
         SetList::PHP_73,
         SetList::PHP_74,
-//        SetList::PHP_80,
-//        SetList::PHP_81,
+        SetList::PHP_80,
         \Rector\PHPUnit\Set\PHPUnitSetList::PHPUNIT_60,
         PHPUnitSetList::PHPUNIT_70,
         PHPUnitSetList::PHPUNIT_80,
@@ -25,6 +23,6 @@ return static function (RectorConfig $rectorConfig): void {
         PHPUnitSetList::PHPUNIT_91,
     ]);
 
-    // register single rule
-    $rectorConfig->rule(TypedPropertyRector::class);
+    $rectorConfig->paths(['src', 'tests']);
+
 };
