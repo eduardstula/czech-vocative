@@ -8,7 +8,8 @@
 - PHP 8.0
 - PHP 8.1
 - PHP 8.2
-- PHP 8.3 (dev)
+- PHP 8.3 (nightly)
+- PHP 8.4 (nightly)
 
 ## Instalace
 
