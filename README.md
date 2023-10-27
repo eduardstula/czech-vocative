@@ -1,3 +1,7 @@
+[![Latest Stable Version](http://poser.pugx.org/eduardstula/czech-vocative/v)](https://packagist.org/packages/eduardstula/czech-vocative)
+[![Latest Unstable Version](http://poser.pugx.org/eduardstula/czech-vocative/v/unstable)](https://packagist.org/packages/eduardstula/czech-vocative)
+![Run tests](https://github.com/eduardstula/czech-vocative/actions/workflows/run-tests.yml/badge.svg)
+[![Total Downloads](http://poser.pugx.org/eduardstula/czech-vocative/downloads)](https://packagist.org/packages/eduardstula/czech-vocative)
 [![License](https://poser.pugx.org/granam/czech-vocative/license)](https://packagist.org/packages/granam/czech-vocative)
 
 # Vokativ
